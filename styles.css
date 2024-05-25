@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('AIUB.jpg'); /* Replace 'aiub_background.jpg' with the path to your image */
+    background-image: url(AIUB.jpg); /* Replace 'aiub_background.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     /*background-position-y: -160px;*/
