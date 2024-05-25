@@ -94,11 +94,11 @@ function calculateSemesterGPA() {
     }
 
     if (totalCredits === 0) {
-        document.getElementById('semester-gpa-result').innerText = `Semester GPA: 0.00`;
+        document.getElementById('semester-gpa-result').innerText = `Semester CGPA: 0.00`;
         document.getElementById('semester-total-credits').innerText = `Total Credits: 0`;
     } else {
         let semesterGPA = totalPoints / totalCredits;
-        document.getElementById('semester-gpa-result').innerText = `Semester GPA: ${semesterGPA.toFixed(2)}`;
+        document.getElementById('semester-gpa-result').innerText = `Semester CGPA: ${semesterGPA.toFixed(2)}`;
         document.getElementById('semester-total-credits').innerText = `Total Credits: ${totalCredits}`;
     }
 }
@@ -124,11 +124,11 @@ function calculateOverallCGPA() {
 
     if (totalCredits === 0) {
         document.getElementById('overall-cgpa-result').innerText = `Overall CGPA: 0.00`;
-        document.getElementById('overall-total-credits').innerText = `Total Credits: 0`;
+        document.getElementById('overall-total-credits').innerText = `Completed Credits: 0`;
     } else {
         let overallCGPA = totalPoints / totalCredits;
         document.getElementById('overall-cgpa-result').innerText = `Overall CGPA: ${overallCGPA.toFixed(2)}`;
-        document.getElementById('overall-total-credits').innerText = `Total Credits: ${totalCredits}`;
+        document.getElementById('overall-total-credits').innerText = `Completed Credits: ${totalCredits}`;
     }
 }
 
