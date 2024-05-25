@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        <div class="calculator">
+            <h2>Semester GPA Calculator</h2>
+            <div id="semester-cgpa-form">
+                <div class="course">
+                    <label>Course 1: Grade</label>
+                    <input type="text" id="grade1" placeholder="A+, A, B+, B, C, D etc.">
+                    <label>Credit</label>
+                    <input type="number" id="credit1" placeholder="Enter Credits">
+                    <button onclick="removeCourse(this)" class="remove-button">Remove</button>
+                </div>
+                <div class="button-group">
+                    <button onclick="addCourse()">Add Course</button>
+                    <button onclick="calculateSemesterGPA()">Calculate Semester GPA</button>
+                    <button onclick="resetSemesterGPA()">Reset</button>
+                </div>
+                <h3 id="semester-gpa-result"></h3>
+                <h3 id="semester-total-credits"></h3>
+            </div>
+        </div>
+        <div class="calculator">
+            <h2>Overall CGPA Calculator</h2>
+            <div id="overall-cgpa-form">
+                <div class="semester">
+                    <label>Semester 1: CGPA</label>
+                    <input type="number" step="0.01" id="sem-cgpa1" placeholder="Enter CGPA">
+                    <label>Credit</label>
+                    <input type="number" id="sem-credit1" placeholder="Enter Credits">
+                    <button onclick="removeSemester(this)" class="remove-button">Remove</button>
+                </div>
+                <div class="button-group">
+                    <button onclick="addSemester()">Add Semester</button>
+                    <button onclick="calculateOverallCGPA()">Calculate Overall CGPA</button>
+                    <button onclick="resetOverallCGPA()">Reset</button>
+                </div>
+                <h3 id="overall-cgpa-result"></h3>
+                <h3 id="overall-total-credits"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
