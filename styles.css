@@ -74,3 +74,34 @@ button:hover {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+
+/* Add this media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .calculator {
+        margin-top: 10px;
+    }
+
+    .course, .semester {
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    #semester-gpa-result, #overall-cgpa-result {
+        font-size: 1em;
+    }
+}
